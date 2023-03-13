@@ -1,12 +1,4 @@
-let arrNumber = [0, 1, 2, 3, 4, 5, 6];
-
-function getRandomItem(arrNumber) {
-  let randomIndex = Math.floor(Math.random() * arrNumber.length);
-  let item = arrNumber[randomIndex];
-  return item;
-}
-
-let dayNumber = getRandomItem(arrNumber);
+let dayNumber = Math.floor(Math.random() * 10);
 
 if (dayNumber === 0) {
   console.log("Sunday");
